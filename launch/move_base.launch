@@ -32,7 +32,7 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCL
   <!-- <arg name="base_local_planner" default="base_local_planner/TrajectoryPlannerROS"/> -->
 
 
-  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+  <node pkg="move_base" type="move_base" respawn="true" name="move_base" output="screen">
 
     <!-- Load parameters for the Normal Layer plugin -->
     <rosparam file="$(find normal_vect)/config/normal_costmap_params.yaml" command="load" />
